@@ -131,11 +131,21 @@ alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 
+alt-a = 'workspace a'
+alt-b = 'workspace b'
+alt-c = 'workspace c'
+alt-d = 'workspace d'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
 alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
 alt-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
 alt-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
+
+alt-shift-a = 'move-node-to-workspace a --focus-follows-window'
+alt-shift-b = 'move-node-to-workspace b --focus-follows-window'
+alt-shift-c = 'move-node-to-workspace c --focus-follows-window'
+alt-shift-d = 'move-node-to-workspace d --focus-follows-window'
 
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
@@ -157,7 +167,10 @@ alt-w = ['exec-and-forget open -a /Applications/WezTerm.app', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 1 = '^Built-in.*$'
-2 = '^MZ27AQ*$'
-#     4 = '^dell$'
-#     5 = 'main'
-#     6 = '^elgato$'
+2 = '^Built-in.*$'
+3 = '^Built-in.*$'
+4 = '^Built-in.*$'
+a = '^MZ27AQ$'
+b = '^MZ27AQ$'
+c = '^MZ27AQ$'
+d = '^MZ27AQ$'

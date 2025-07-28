@@ -34,4 +34,8 @@ config.keys = {
 	},
 }
 
+-- Scrollbar
+config.scrollback_lines = 3500
+config.enable_scroll_bar = true
+
 return config
