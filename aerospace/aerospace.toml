@@ -131,10 +131,10 @@ alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 
-alt-a = 'workspace a'
-alt-b = 'workspace b'
-alt-c = 'workspace c'
-alt-d = 'workspace d'
+alt-q = 'workspace q'
+alt-w = 'workspace w'
+alt-e = 'workspace e'
+alt-r = 'workspace r'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
@@ -142,10 +142,10 @@ alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
 alt-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
 alt-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
 
-alt-shift-a = 'move-node-to-workspace a --focus-follows-window'
-alt-shift-b = 'move-node-to-workspace b --focus-follows-window'
-alt-shift-c = 'move-node-to-workspace c --focus-follows-window'
-alt-shift-d = 'move-node-to-workspace d --focus-follows-window'
+alt-shift-q = 'move-node-to-workspace q --focus-follows-window'
+alt-shift-w = 'move-node-to-workspace w --focus-follows-window'
+alt-shift-e = 'move-node-to-workspace e --focus-follows-window'
+alt-shift-r = 'move-node-to-workspace r --focus-follows-window'
 
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
@@ -166,11 +166,11 @@ backspace = ['close-all-windows-but-current', 'mode main']
 alt-w = ['exec-and-forget open -a /Applications/WezTerm.app', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-1 = '^Built-in.*$'
-2 = '^Built-in.*$'
-3 = '^Built-in.*$'
-4 = '^Built-in.*$'
-a = '^MZ27AQ$'
-b = '^MZ27AQ$'
-c = '^MZ27AQ$'
-d = '^MZ27AQ$'
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+q = ['^MZ27AQ$', 'main']
+w = ['^MZ27AQ$', 'main']
+e = ['^MZ27AQ$', 'main']
+r = ['^MZ27AQ$', 'main']

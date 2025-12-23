@@ -13,7 +13,7 @@ config.window_padding = {
 	top = 10,
 	bottom = 10,
 }
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = 'Tokyo Night Storm'
 
 config.default_cwd = "/Users/notludovico/Code"
 
@@ -35,7 +35,7 @@ config.keys = {
 }
 
 -- Scrollbar
-config.scrollback_lines = 3500
+config.scrollback_lines = 5000
 config.enable_scroll_bar = true
 
 return config
