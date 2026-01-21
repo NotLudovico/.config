@@ -20,8 +20,8 @@ require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 	},
-	install = { colorscheme = { "tokyonight" } },
-	checker = { enabled = true },
+	install = { colorscheme = { "rose-pine" } },
+	checker = { enabled = true, notify = false },
 })
 
 local builtin = require("telescope.builtin")

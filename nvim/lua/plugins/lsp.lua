@@ -4,18 +4,35 @@ return {
 		dependencies = {
 			{
 				"folke/lazydev.nvim",
-				ft = "lua", -- only load on lua files
+				ft = "lua",
 				opts = {
 					library = {
-						-- See the configuration section for more details
-						-- Load luvit types when the `vim.uv` word is found
 						{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
 					},
 				},
-			}
+			},
 		},
 		config = function()
+			vim.lsp.config.lua_ls = {}
 			vim.lsp.enable("lua_ls")
+
+			-- 2. Setup basedpyright with relaxed rules
+			vim.lsp.config.basedpyright = {
+				settings = {
+					basedpyright = {
+						analysis = {
+							-- "standard" is usually strict enough.
+							typeCheckingMode = "basic",
+
+							-- Explicitly disable the noisy "Unknown" type warnings
+							reportUnknownMemberType = false,
+							reportUnknownArgumentType = false,
+							reportUnknownVariableType = false,
+							reportAny = false,
+						},
+					},
+				},
+			}
 			vim.lsp.enable("basedpyright")
 		end,
 	},

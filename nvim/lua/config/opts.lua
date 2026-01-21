@@ -16,3 +16,23 @@ vim.diagnostic.config({
 	update_in_insert = false,
 	severity_sort = true,
 })
+
+-- can undo even after vim closed and reopened
+vim.opt.undofile = true
+
+-- Automatically enable csv mode when opening csv
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "csv",
+	desc = "Enable CSV View on .csv files",
+	callback = function()
+		require("csvview").enable()
+	end,
+})
+
+vim.diagnostic.config({
+	virtual_text = false
+})
+
+vim.keymap.set('n', 'gd', function()
+    require('telescope.builtin').lsp_definitions()
+end, { desc = 'LSP Definitions' })

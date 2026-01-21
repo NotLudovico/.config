@@ -13,11 +13,11 @@ config.window_padding = {
 	top = 10,
 	bottom = 10,
 }
-config.color_scheme = 'Tokyo Night Storm'
+config.color_scheme = 'nord'
 
 config.default_cwd = "/Users/notludovico/Code"
 
-config.window_background_opacity = 0.6
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 10
 
 local act = wezterm.action
